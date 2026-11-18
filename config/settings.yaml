@@ -1,0 +1,37 @@
+app:
+  name: "ZYRON CYBERSECURITY"
+  subtitle: "CYBERSECURITY RESEARCH & AUTOMATION FRAMEWORK"
+  version: "0.1.0"
+  environment: "development"
+  default_operator: "analyst"
+
+storage:
+  database_path: "database/zyron.db"
+  evidence_path: "evidence"
+  reports_path: "reports"
+  logs_path: "zyron.log"
+
+security:
+  enforce_scope: true
+  default_policy: "DENY"
+  require_authorization: true
+  dry_run_default: true
+  max_evidence_file_size_mb: 25
+
+modules:
+  bug_bounty:
+    enabled: true
+    label: "Bug Bounty Research"
+    description: "Manage bug bounty targets, asset inventory, DNS/HTTP recon, and vulnerability verification."
+  red_team:
+    enabled: true
+    label: "Red Team Operations"
+    description: "Engagement planning, Active Directory lab assessment, ATT&CK mapping, and detection tests."
+  penetration_testing:
+    enabled: true
+    label: "Penetration Testing"
+    description: "Network & web app assessment, port/service tracking, findings lifecycle, and formal reporting."
+  automation:
+    enabled: true
+    label: "Security Automation"
+    description: "Deterministic Python task runner, result parsing, workflow engine, and scheduled security checks."

@@ -1,0 +1,12 @@
+# ZYRON Cybersecurity Research & Automation Framework
+# Core dependencies optimized for 8 GB RAM (Windows 11 & Kali Linux)
+
+# Configuration & Data Validation
+pyyaml>=6.0.1
+
+# Automated Testing
+pytest>=7.0.0
+
+# Optional lightweight enhancements (graceful fallback implemented)
+requests>=2.28.0
+rich>=13.0.0
